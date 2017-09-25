@@ -7,5 +7,8 @@ RUN apk add --update build-base python-dev py-pip jpeg-dev zlib-dev libffi-dev p
 # Change LIBRARY_PATH environment variable because of error in building zlib
 ENV LIBRARY_PATH=/lib:/usr/lib
 
+# Install packages the requires gcc
+RUN pip install Pillow argon2-cffi psycopg2
+
 # Copied from base image
 CMD ["python3"]
