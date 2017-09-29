@@ -1,6 +1,9 @@
 # The base image is python 3 alpine
 FROM python:3-alpine
 
+# Author: Roy Evangelista
+MAINTAINER Roy Evangelista <royevangelista@gmail.com>
+
 # Install new packages
 RUN apk add --update build-base python-dev py-pip jpeg-dev zlib-dev libffi-dev postgresql-dev
 
