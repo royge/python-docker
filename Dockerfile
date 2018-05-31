@@ -13,5 +13,8 @@ ENV LIBRARY_PATH=/lib:/usr/lib
 # Install packages the requires gcc
 RUN pip install Pillow argon2-cffi psycopg2
 
+# Remove dev packages
+RUN apk del python-dev jpeg-dev zlib-dev libffi-dev postgresql-dev
+
 # Copied from base image
 CMD ["python3"]
