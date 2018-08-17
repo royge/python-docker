@@ -10,7 +10,7 @@ commandTests:
     args: ["--version"]
     expectedOutput: ["Python 3.6.*\n"]
 
-  - name: "Pillow installations"
+  - name: "Pillow installation"
     command: "pip"
     args: ["show", "Pillow"]
     expectedOutput: [
@@ -18,7 +18,7 @@ commandTests:
         "Version: 5.1.*\n",
         ]
 
-  - name: "argon2-cffi installations"
+  - name: "argon2-cffi installation"
     command: "pip"
     args: ["show", "argon2-cffi"]
     expectedOutput: [
@@ -26,7 +26,7 @@ commandTests:
         "Version: 18.1.*\n",
         ]
 
-  - name: "psycopg2 installations"
+  - name: "psycopg2 installation"
     command: "pip"
     args: ["show", "psycopg2"]
     expectedOutput: [
