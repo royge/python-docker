@@ -7,4 +7,4 @@ pre-test:
 test:
 	container-structure-test test \
 		--image python:latest \
-		--config test_config.yaml
+		--config test-config.yaml
