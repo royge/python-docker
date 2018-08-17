@@ -1,0 +1,35 @@
+schemaVersion: '2.0.0'
+commandTests:
+  - name: "python installation"
+    command: "which"
+    args: ["python"]
+    expectedOutput: ["/usr/local/bin/python\n"]
+
+  - name: "python version"
+    command: "python"
+    args: ["--version"]
+    expectedOutput: ["Python 3.6.*\n"]
+
+  - name: "Pillow installations"
+    command: "pip"
+    args: ["show", "Pillow"]
+    expectedOutput: [
+        "Pillow\n",
+        "Version: 5.1.*\n",
+        ]
+
+  - name: "argon2-cffi installations"
+    command: "pip"
+    args: ["show", "argon2-cffi"]
+    expectedOutput: [
+        "argon2-cffi\n",
+        "Version: 18.1.*\n",
+        ]
+
+  - name: "psycopg2 installations"
+    command: "pip"
+    args: ["show", "psycopg2"]
+    expectedOutput: [
+        "psycopg2\n",
+        "Version: 2.7.*\n",
+        ]
