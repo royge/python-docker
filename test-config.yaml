@@ -23,7 +23,7 @@ commandTests:
     args: ["show", "argon2-cffi"]
     expectedOutput: [
         "argon2-cffi\n",
-        "Version: 18.1.*\n",
+        "Version: 18.*\n",
         ]
 
   - name: "psycopg2 installation"
