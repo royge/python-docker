@@ -15,7 +15,7 @@ commandTests:
     args: ["show", "Pillow"]
     expectedOutput: [
         "Pillow\n",
-        "Version: 5.*\n",
+        "Version: 6.*\n",
         ]
 
   - name: "argon2-cffi installation"
@@ -23,7 +23,7 @@ commandTests:
     args: ["show", "argon2-cffi"]
     expectedOutput: [
         "argon2-cffi\n",
-        "Version: 18.*\n",
+        "Version: 19.*\n",
         ]
 
   - name: "psycopg2 installation"
@@ -31,5 +31,5 @@ commandTests:
     args: ["show", "psycopg2"]
     expectedOutput: [
         "psycopg2\n",
-        "Version: 2.7.*\n",
+        "Version: 2.8.*\n",
         ]
