@@ -1,5 +1,5 @@
 # The base image is python 2.7
-FROM python:2.7
+FROM python:2.7-stretch
 
 # Author: Roy Evangelista
 MAINTAINER Roy Evangelista <royevangelista@gmail.com>
